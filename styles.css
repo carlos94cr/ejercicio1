@@ -1,19 +1,43 @@
-.header-container{
-    background-color: dimgrey;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-}
- 
-.bar-logo{
-    width: 110px;
-    position: relative;
-    margin-left: 10px;
-    margin-top: 10px;
+.header-container {
+  background-color: rgb(16, 16, 16);
+  height: 100px;
+  width: 100%;
+  margin-left: -8px;
+  margin-top: -8px;
+  position: fixed;
 }
 
-.nav-logo{
-    position: relative;
-    float: right;
-    margin-right: 50px;
+.bar-logo {
+  width: 120px;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.bar-logo:hover {
+  transform: scale(1.2);
+}
+
+.div-logo {
+  position: absolute;
+  top: 50%;
+  text-decoration: none;
+  color: white;
+  
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+div{
+    display: flex;
+    width: 100%;
+}
+
+.bar-fondo {
+    width: 100%;
+    height: auto;
 }
