@@ -1,0 +1,19 @@
+.header-container{
+    background-color: dimgrey;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+ 
+.bar-logo{
+    width: 110px;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.nav-logo{
+    position: relative;
+    float: right;
+    margin-right: 50px;
+}
