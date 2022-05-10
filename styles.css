@@ -2,6 +2,11 @@ body {
   background-color: rgb(16, 16, 16);
 }
 
+header {
+  background-color: rgb(16, 16, 16);
+  z-index: 99;
+  position: fixed;
+}
 .header-container {
   background-color: rgb(16, 16, 16);
   height: 100px;
@@ -55,21 +60,25 @@ div {
 .bar-fondo {
   width: auto;
   height: auto;
+  opacity: 0.5;
 }
 
 .container-1 {
-  display: inline-block;
+  display: flex;
   text-align: center;
   position: static;
   flex-direction: column;
   background-color: rgb(16, 16, 16);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .container-1text {
   position: absolute;
   justify-content: center;
   align-content: center;
-  top: 50%;
   display: block;
   line-height: 5px;
 }
@@ -99,13 +108,14 @@ div {
 .container-2 {
   display: flex;
   text-align: center;
-  position: static;
+  position: relative;
   flex-direction: column;
   background-color: rgb(211, 197, 197);
   height: 500px;
   align-content: center;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .block-1 {
@@ -120,6 +130,22 @@ div {
   border: 3px solid orange;
   flex-wrap: wrap;
   line-height: 20px;
+}
+
+.block-2 {
+  display: flex;
+  height: 50px;
+  width: 70px;
+  background-color: black;
+  opacity: 0.5;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid orange;
+  flex-wrap: wrap;
+  line-height: 20px;
+  position: static;
 }
 
 .container-3 {
