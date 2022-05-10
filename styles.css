@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(16, 16, 16);
+}
+
 .header-container {
   background-color: rgb(16, 16, 16);
   height: 100px;
@@ -8,10 +12,14 @@
 }
 
 .bar-logo {
-  width: 120px;
-  position: absolute;
-  margin-left: 10px;
-  margin-top: 10px;
+  max-width: 100px;
+  display: flex;
+  margin-left: 25px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .bar-logo:hover {
@@ -19,25 +27,110 @@
 }
 
 .div-logo {
-  position: absolute;
   top: 50%;
+  display: flex;
   text-decoration: none;
   color: white;
-  
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
-a:link, a:visited{
+a:link,
+a:visited {
   text-decoration: none;
   color: white;
   padding: 5px;
 }
 
-div{
-    display: flex;
-    width: 100%;
+div {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-content: center;
 }
 
 .bar-fondo {
-    width: 100%;
-    height: auto;
+  width: auto;
+  height: auto;
+}
+
+.container-1 {
+  display: inline-block;
+  text-align: center;
+  position: static;
+  flex-direction: column;
+  background-color: rgb(16, 16, 16);
+}
+
+.container-1text {
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  top: 50%;
+  display: block;
+  line-height: 5px;
+}
+
+.title1 {
+  font-family: "Macondo", cursive;
+  color: orange;
+  font-size: 20px;
+}
+
+.title2 {
+  font-family: "Koulen", sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+.line {
+  color: orange;
+}
+
+.title3 {
+  font-family: "Koulen", sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+.container-2 {
+  display: flex;
+  text-align: center;
+  position: static;
+  flex-direction: column;
+  background-color: rgb(211, 197, 197);
+  height: 500px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-1 {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  background-color: black;
+  align-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid orange;
+  flex-wrap: wrap;
+  line-height: 20px;
+}
+
+.container-3 {
+  display: flex;
+  text-align: center;
+  position: static;
+  flex-direction: row;
+  background-color: rgb(16, 16, 16);
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
